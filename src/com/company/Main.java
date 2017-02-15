@@ -24,7 +24,7 @@ public class Main {
             try {
                 website = new URL(links.get(i));
                 ReadableByteChannel rbc = Channels.newChannel(website.openStream());
-                FileOutputStream fos = new FileOutputStream((i + 1) + "-" + titres.get(i) + ".mp4");
+                FileOutputStream fos = new FileOutputStream((i+1) + "-" + titres.get(i) + ".mp4");
                 fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
             } catch (IOException e) {
                 e.printStackTrace();
