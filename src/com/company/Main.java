@@ -36,7 +36,7 @@ public class Main {
 
     private static void add() {
         //System.out.println(links + "\n" + titres);
-        System.out.println("Tap 'quit' pour quiter");
+        System.out.println("Tap 'quit' pour quitter");
         boolean encore = true;
         while (encore) {
             System.out.print("Link : ");
